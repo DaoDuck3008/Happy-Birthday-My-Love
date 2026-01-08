@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Happy Birthday Phương Thảo</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f4257b",
+              "primary-light": "#ff8eb6",
+              "background-light": "#fff0f5",
+              "background-dark": "#221017",
+              "rose-pastel": "#ffd1dc",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+            animation: {
+              "fall-slow": "fall 15s linear infinite",
+              "fall-medium": "fall 10s linear infinite",
+              "fall-fast": "fall 8s linear infinite",
+              "float-up": "floatUp 7s ease-in-out infinite",
+              "cursor-blink": "blink 1s step-end infinite",
+              "type-reveal": "typing 3.5s steps(40, end) forwards",
+              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              fall: {
+                "0%": {
+                  transform: "translateY(-20vh) rotate(0deg)",
+                  opacity: "0",
+                },
+                "10%": { opacity: "0.9" },
+                "90%": { opacity: "0.9" },
+                "100%": {
+                  transform: "translateY(120vh) rotate(360deg)",
+                  opacity: "0",
+                },
+              },
+              floatUp: {
+                "0%": { transform: "translateY(0) scale(0.8)", opacity: "0" },
+                "20%": { opacity: "0.6" },
+                "80%": { opacity: "0.6" },
+                "100%": {
+                  transform: "translateY(-150px) scale(1.2)",
+                  opacity: "0",
+                },
+              },
+              blink: {
+                "0%, 100%": { borderColor: "transparent" },
+                "50%": { borderColor: "#f4257b" },
+              },
+              typing: {
+                "0%": { width: "0" },
+                "100%": { width: "100%" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #f4257b;
+        border-radius: 4px;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 20px 40px rgba(244, 37, 123, 0.1);
+      }
+      .typing-container {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #f4257b;
+        animation: typing 3.5s steps(30, end) 1s both,
+          blink 0.75s step-end infinite;
+        width: 0;
+        max-width: fit-content;
+      }
+      .falling-item:nth-child(1) {
+        left: 5%;
+        animation-delay: 0s;
+      }
+      .falling-item:nth-child(2) {
+        left: 15%;
+        animation-delay: 2s;
+      }
+      .falling-item:nth-child(3) {
+        left: 85%;
+        animation-delay: 4s;
+      }
+      .falling-item:nth-child(4) {
+        left: 35%;
+        animation-delay: 1.5s;
+      }
+      .falling-item:nth-child(5) {
+        left: 75%;
+        animation-delay: 5.5s;
+      }
+      .falling-item:nth-child(6) {
+        left: 10%;
+        animation-delay: 7s;
+      }
+      .falling-item:nth-child(7) {
+        left: 92%;
+        animation-delay: 3s;
+      }
+      .falling-item:nth-child(8) {
+        left: 25%;
+        animation-delay: 6s;
+      }
+      .falling-item:nth-child(9) {
+        left: 65%;
+        animation-delay: 8s;
+      }
+      .falling-item:nth-child(10) {
+        left: 50%;
+        animation-delay: 0.5s;
+      }
+    </style>
+  </head>
+  <body
+    class="font-display bg-background-light text-[#181114] overflow-hidden selection:bg-primary selection:text-white"
+  >
+    <div
+      class="relative min-h-screen w-full flex flex-col items-center justify-center"
+    >
+      <!-- <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div
+          class="falling-item absolute top-[-200px] w-32 h-40 rounded-xl bg-white p-2 shadow-lg transform rotate-3 animate-fall-slow opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBU4nsZ9MqfGeGbOuFYRHIvgdin0fqGXtKn_dosJCLgEsoAk4I4_dxuekY7Jq1Ip_KJCTf6CmTMVjjbzzIyErEPQae1IIdxYq7Q3mEjQdYrP8z05tsIgzGBP09QefewBtfOUX0yyf_sJ6-KMSpaPp1-vJ84ryqCmLniJjHHsJlwRpN9er98eY4oBdXlR218Q1mYctTvjNVIeS9HjOUrhfzOoGTRTXmDebZNsTDs3zul8_IfjsYgI35iddInoX_1HxcUlh-6BH0mNqA');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-28 h-36 rounded-xl bg-white p-2 shadow-lg transform -rotate-2 animate-fall-fast opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYlQfxyVvOMsXDt7pVHNzNRFqnqWvMV7vgDlO3F0nk1otKxc7jri4EKHHHZ9tEy7pjVz_Ciy1mmDjNFQjcfUsrRRkWA8OwYM8iuvoMc7i5sAVuz_-FGTGNOVK3pWz0XxYqG0TWkiV-QsMBugcyeohnm7td_dvMDhjckquLVvAX-crFk1Hi0iL44xVD9Qnn3cJhVz5dlh_byySFQpUwVqWdrMJXLxKBZ1_SFJawdS_y6EzNhkcdFVY3jzQ-fAeOEGD2Z5rFCrGGyhs');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-36 h-48 rounded-xl bg-white p-2 shadow-lg transform rotate-6 animate-fall-medium opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtsb6zMo3isRKAf9fWtmiPJ7YBc1y0b8kRKIhj2nhQtq4PTlhb5o_RERRnN-JwOh6K8TxnlTnKfL9PS4QRYnVcc3fayHsF-ReAabg8f7HaUTyjvvQwH0HhirORudo3p8ZLUserBcUuZAnjDdtnk79y270JWYpYZLBSEcrAmuw9BvwbwJjq4tbGXlwwaacHFt23rvck4VxPvbyh0F9pZwVDN2bd-7PRi-gqfVfvrza0Iuuwz-0Mg861kaO-ZOCeFzmgWrRAeqScxq4');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-28 h-28 rounded-full bg-white p-2 shadow-lg transform rotate-12 animate-fall-slow opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-full"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmZq5J4EnVMu21GaFDSuC1H1b4kn73yI3D7uO6YkNCNHugb_5dgFH6C2PIGl4JuGckCHzWwEHTzgULzCQifxkRgXTn2uB7NgdbHVrTMxtKVQrxEOmqwkxsn3xytfiEuOWx1UN3p5-lre7GCEZk3C7cAArTRJlaGQutGLQh5kgsbRYX7kOUhH6TNpcUuhdshbssTmpePEuLJqDoQf0Bx1jwcyINiXHlMSMPwySak3aIvHfUkvj2p5mXtKZFWwU-THflXAEz04BXBjw');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-32 h-44 rounded-xl bg-white p-2 shadow-lg transform -rotate-6 animate-fall-fast opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEsTk2vXtw-XBnKwKbQmd8yxJQXBp8OGWahHIqDQ7hiE7Yx6rX6202o5EEmDGc4Kc7me7ud6siCBxLQtFJMnB3OgG2NRDhEDILNTuIx9Zb8ID31OQGWyrFjXhDzrMEyZFTYsAp9zNQ3e02B24OciUOq3fNEuaiRPUswlIhh6sYYlSEVPxc0MDfz4O6NzEeg3IOEbmcRqgD1bli-e3YlRq4kGMnkp6I4cP8q9zLS7s3U_Z_hBTT1qHz-ixxozQ3yWxDqTRl5w4vjVo');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-34 h-42 rounded-xl bg-white p-2 shadow-lg transform rotate-3 animate-fall-medium opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFtA51ExVqqtnvWnR3-kSbjVBCijXnPBtS55ZGMnPed0MnmPRuwwVEEvdtL2cjnHE3i0Fh4fClGfJzEby9qLJhdbjIH3AJOpz_GM0H97SrpHxrLhyzBr4YIREgtLHUXPOckDjHLxSx1D6Dc75gXYfov6eDAHvrFfXfY8Yx1CPWFOox9nGbYfwKuGNAR7BQBwDU61theLw3aGkZ-jo4h0C31kLGWSZ7CJCuK4UBfHRNijRRweGpxAo7S3egJxzZrKNLj-_B-batmuE');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-24 h-24 rounded-full bg-white p-2 shadow-lg transform -rotate-12 animate-fall-slow opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-full"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUX2OlWVzPQx9zlYtxydb_aCJRsBgaBKtqiWdOR80ftg0SmWdalFJKW6CW0dzXPQdYXq_k4uI_zSb9_rE7NvQBzB9WdACOxg_WnjvXFpw_R23bafH_DfCIDsjd2ySogfVeMNGK98bpPVGpTR3uGOp58dOmU4NJju5BOZUggxvrTc9xl5lAxTFDVmeW6BQBm7DFFzTZXguAFgMMox6G7oqEcAO5Yo4qGiBWNhS5qcS-FHJ1X910ykKjj9BA2RGPsXh20l-FCIJwqoI');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-32 h-40 rounded-xl bg-white p-2 shadow-lg transform rotate-1 animate-fall-fast opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8HtT6qaerfD9Fl3dSFwPeMVtdWedr0UcszdRvtmFHlnFLEzRVc-Obi1Q8h4-Y10UWHEgBIKdUJwu6NHcx1jyLfjgoTdptBCGM0290kqwQBknsh6CFhzddCmwnmN4lJXaifedOieR257haK3oOO47V7pNrW54ORptromB3xy2VrVCI2E0ERc6o6_ZUd2JciJwqg8-syO4CtgQizazX8Iw6SoQC1gzNfJHvRw8QNyhFIBl523RNPDcR_L0xhJT5FmQYdzlGq1iSowg');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-40 h-32 rounded-xl bg-white p-2 shadow-lg transform -rotate-3 animate-fall-medium opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeMtHAm2Ue8rpUzV3r0szG2zE8Td292C0jlfPuwbX10QZ2tFIHkT_h3P0FNDMUqdAXq6NQ-EDS70xDRWqB0ANmUFY2bDKoidkWsVyrAw-XPVHeVX8tylz6GAPdIkqmUERLteS6PsBsUFRUMknaA75MGuXPqg4P5-ZNbN_USmNdFAl510Onzr9Tc26ZdAQNIcytSd5zNAuUVTkZCR-U1YEp9rF9Lg7Qv71C-j6ubpOhmPdhKi65Cp_m8e6hFQqqPXALKpKsQC2k8cw');
+            "
+          ></div>
+        </div>
+        <div
+          class="falling-item absolute top-[-200px] w-32 h-40 rounded-xl bg-white p-2 shadow-lg transform rotate-6 animate-fall-slow opacity-0 z-0"
+        >
+          <div
+            class="w-full h-full bg-cover bg-center rounded-lg"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJx0q_tOC2oqNRRxQ-CXPIEhHWkVXF_XyBHYsXLr3E1QQGznLtOA2ieI3OoFsAgw9ASkidKb1qFRQOqhwzNm6XDLrOukJxW_Arg3j8c2zFDr35-feSCEXvDdXBSOdPWN4pLwx0tttwe-W8hXu9y_Y2iNjHY5Kh2OrHibcK4B_1UEoqHXU0VTFM81BMU5CTHJXQitpHsoOwXTJJzdbVvyn2o9c4Zr_7n_FexkSh4PwHCT4taXy5oaFnX1P69XxTnv0AGzuEkkX_OrA');
+            "
+          ></div>
+        </div>
+      </div> -->
+      <div
+        class="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-rose-pastel/40 rounded-full blur-[100px] pointer-events-none animate-pulse-slow"
+      ></div>
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <span
+          class="material-symbols-outlined absolute text-primary/40 text-4xl animate-float-up left-[20%] top-[80%]"
+          style="animation-delay: 0.5s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/30 text-2xl animate-float-up left-[80%] top-[70%]"
+          style="animation-delay: 1.5s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/50 text-5xl animate-float-up left-[70%] top-[85%]"
+          style="animation-delay: 2.5s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/30 text-3xl animate-float-up left-[30%] top-[60%]"
+          style="animation-delay: 0.2s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/40 text-6xl animate-float-up left-[50%] top-[90%]"
+          style="animation-delay: 3s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/20 text-4xl animate-float-up left-[10%] top-[75%]"
+          style="animation-delay: 4s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/30 text-3xl animate-float-up left-[90%] top-[65%]"
+          style="animation-delay: 1s"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-primary/25 text-5xl animate-float-up left-[40%] top-[88%]"
+          style="animation-delay: 2s"
+          >favorite</span
+        >
+      </div>
+      <header
+        class="absolute top-0 left-0 w-full flex items-center justify-between px-6 py-4 z-20"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="size-10 text-primary flex items-center justify-center bg-white/90 backdrop-blur rounded-full shadow-sm border border-white/50"
+          >
+            <span class="material-symbols-outlined text-[24px]">cake</span>
+          </div>
+          <h2
+            class="text-[#181114] text-lg font-bold leading-tight tracking-tight drop-shadow-sm"
+          >
+            Happy Birthday Phương Thảo
+          </h2>
+        </div>
+        <!-- <button
+          class="flex items-center justify-center size-10 rounded-full bg-white/90 backdrop-blur shadow-sm text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer group border border-white/50"
+        >
+          <span class="material-symbols-outlined group-hover:animate-pulse"
+            >music_note</span
+          >
+        </button> -->
+      </header>
+      <main
+        class="relative z-10 w-full max-w-[700px] px-4 flex flex-col items-center justify-center h-full"
+      >
+        <div
+          class="glass-card w-full rounded-[2.5rem] p-8 md:p-14 flex flex-col gap-8 text-center shadow-2xl border-white/70 border relative overflow-hidden"
+        >
+          <div
+            class="absolute -top-20 -left-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute -bottom-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div class="w-full flex justify-center">
+            <div
+              class="px-5 py-1.5 rounded-full bg-gradient-to-r from-primary/10 to-rose-pastel/30 text-primary text-xs font-extrabold uppercase tracking-widest border border-white/50 shadow-sm"
+            >
+              Tin nhắn đặc biệt
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold text-[#181114] tracking-tight"
+            >
+              Gửi đến bạn...
+            </h2>
+            <div class="h-1 w-12 bg-primary/30 rounded-full mx-auto"></div>
+          </div>
+          <div
+            class="min-h-[180px] flex flex-col items-center justify-center relative"
+          >
+            <p
+              class="text-[#181114]/80 text-lg md:text-xl font-medium leading-relaxed max-w-[550px] mb-6"
+            >
+              Người con gái đánh cắp trái tim tớ... <br />
+              <!-- Every day with you feels like a celebration, but today is extra
+              special. I hope your day is as sweet as your smile. -->
+              Mỗi ngày quen cậu là một ngày vui, nhưng hôm nay lại là một ngày
+              đặc biệt. Tớ hy vọng ngày vui này và mọi ngày sau nữa sẽ luôn ngọt
+              ngào của cậu.
+            </p>
+            <div class="relative">
+              <div
+                class="text-primary font-bold text-2xl md:text-3xl lg:text-4xl tracking-tight flex items-center justify-center drop-shadow-sm"
+              >
+                <span class="typing-container"> I love you endlessly ❤️ </span>
+              </div>
+              <div
+                class="absolute inset-0 bg-primary/5 blur-xl -z-10 rounded-full"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full mt-4"
+          >
+            <a
+              href="./page1.html"
+              class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-white border border-rose-100 hover:bg-rose-50 text-[#181114] text-sm font-bold tracking-wide transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
+            >
+              <span
+                class="material-symbols-outlined text-[20px] mr-2 text-primary/70"
+                >replay</span
+              >
+              <span>Quay lại tin nhắn trước</span>
+            </a>
+            <a
+              href="./page3.html"
+              class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-gradient-to-r from-primary to-[#ff4d94] hover:from-[#d91b68] hover:to-primary text-white text-sm font-bold tracking-wide transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5 group"
+            >
+              <span class="mr-2">Mở món quà nhỏ của Đào</span>
+              <span
+                class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+      </main>
+      <div
+        class="fixed bottom-0 left-0 w-full h-40 bg-gradient-to-t from-background-light via-background-light/80 to-transparent pointer-events-none z-20"
+      ></div>
+    </div>
+
+    <script>
+      document
+        .querySelector('a[href="./page3.html"]')
+        .addEventListener("click", () => {
+          localStorage.setItem("playMusic", "true");
+        });
+    </script>
+  </body>
+</html>
